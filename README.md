@@ -18,32 +18,3 @@ We detail the core contracts in the Chee protocol.
   <dd>The risk model contract, which validates permissible user actions and disallows actions if they do not fit certain risk parameters. For instance, the Comptroller enforces that each borrowing user must maintain a sufficient collateral balance across all cTokens.</dd>
 </dl>
 
-<dl>
-  <dt>InterestRateModel</dt>
-  <dd>Contracts which define interest rate models. These models algorithmically determine interest rates based on the current utilization of a given market (that is, how much of the supplied assets are liquid versus borrowed).</dd>
-</dl>
-
-<dl>
-  <dt>Careful Math</dt>
-  <dd>Library for safe math operations.</dd>
-</dl>
-
-<dl>
-  <dt>ErrorReporter</dt>
-  <dd>Library for tracking error codes and failure conditions.</dd>
-</dl>
-
-<dl>
-  <dt>Exponential</dt>
-  <dd>Library for handling fixed-point decimal numbers.</dd>
-</dl>
-
-<dl>
-  <dt>WhitePaperInterestRateModel</dt>
-  <dd>Initial interest rate model, as defined in the Whitepaper. This contract accepts a base rate and slope parameter in its constructor.</dd>
-</dl>
-
-<dl>
-  <dt>JumpRateModel</dt>
-  <dd>Advanced interest rate model, as defined in the Whitepaper.</dd>
-</dl>
